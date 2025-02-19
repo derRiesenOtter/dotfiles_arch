@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	name = derRiesenOtter
+	email = 104461717+derRiesenOtter@users.noreply.github.com
+[core]
+	excludesfile = /home/robin/.gitignore
