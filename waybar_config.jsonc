@@ -1,0 +1,86 @@
+{
+  "height": 35,
+  "spacing": 4,
+  "modules-left": [
+    "wireplumber",
+    "backlight"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "network",
+    "cpu",
+    "memory",
+    "battery",
+    "clock"
+  ],
+  "wireplumber": {
+    "tooltip": false,
+    "scroll-step": 5,
+    "format": "{icon}   {volume}%",
+    "format-muted": "󰝟   {volume}%",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "backlight": {
+    "tooltip": false,
+    "format": " {}%",
+    "interval": 1,
+    "on-scroll-up": "light -A 5",
+    "on-scroll-down": "light -U 5"
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{name}: {icon}",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    }
+  },
+  "network": {
+    "format-wifi": " ",
+    "format-ethernet": "{ipaddr}/{cidr} ",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "Disconnected ⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+  "cpu": {
+    "format": "   {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "   {}%"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}   {capacity}%",
+    "format-full": "{icon}   {capacity}%",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{icon}   {time}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "clock": {
+    "locale": "de_DE.UTF-8",
+    "format": "{:%H:%M}",
+    "format-alt": "{:%Y-%m-%d}"
+  }
+}
